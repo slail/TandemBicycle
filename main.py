@@ -12,16 +12,16 @@ def tandemBicycle(redShirtSpeeds, blueShirtSpeeds, fastest):
 
     total = 0
     for idx in range(len(redShirtSpeeds)):
-        rider1 = redShirtSpeeds[idx]
-        rider2 = blueShirtSpeeds[len(blueShirtSpeeds) - 1 - idx]
-        total += max(rider1, rider2)
+        riderOne = redShirtSpeeds[idx]
+        riderTwo = blueShirtSpeeds[len(blueShirtSpeeds) - 1 - idx]
+        total += max(riderOne, riderTwo)
     return total
 
 
 def reverseArray(array):
-    start = 0
-    end = len(array) - 1
-    while start < end:
-        array[start], array[end] = array[end], array[start]
-        start += 1
-        end -= 1
+    startIdx = 0
+    endIdx = len(array) - 1
+    while startIdx < endIdx:
+        array[startIdx], array[endIdx] = array[endIdx], array[startIdx]
+        startIdx += 1
+        endIdx -= 1
